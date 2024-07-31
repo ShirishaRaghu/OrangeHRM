@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Orange HRM Regression Suite" verbose="3"
+	thread-count="5" parallel="tests">
+
+
+	<test name="Login Page Test">
+		<parameter name="browser" value="chrome">
+			<classes>
+				<class name="com.qa.orangehrm.tests.LoginPageTest" />
+			</classes>
+		</parameter>
+	</test>
+
+
+	<test name="Dashboard Page Test">
+		<parameter name="browser" value="chrome">
+			<classes>
+				<class name="com.qa.orangehrm.tests.DashboardPageTest" />
+			</classes>
+		</parameter>
+	</test>
+
+	<test name="PIM Page Test">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="com.qa.orangehrm.tests.PIMPageTest" />
+		</classes>
+	</test>
+
+	<!--<test name="Personal Details Page Test">
+		
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.opencart.tests.PersonaDetailsPageTest" />
+		</classes>
+	</test>-->
+
+
+</suite>
